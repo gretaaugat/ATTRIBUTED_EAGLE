@@ -14,7 +14,7 @@ Due to the considerable size of some raw data files (`.csv`), **Git Large File S
 
 ### Feature Structure and Categories
 
-The dataset consists of **4063 features**, organized into the following categories for easier analysis. Although some categorical variables may be represented by numerical codes in the dataset for storage and processing efficiency, their inherent categorical nature is maintained for data analysis and interpretation purposes.
+The dataset consists of **4061 features**, organized into the following categories for easier analysis. Although some categorical variables may be represented by numerical codes in the dataset for storage and processing efficiency, their inherent categorical nature is maintained for data analysis and interpretation purposes.
 
 | Feature Category    | #    | Typical Data Type               | Generic Description                                                                   |
 | :------------------ | :--- | :------------------------------ | :------------------------------------------------------------------------------------ |
@@ -26,8 +26,7 @@ The dataset consists of **4063 features**, organized into the following categori
 | CENSUS PEOPLE       | 2119 | Mixed (Numeric, Categorical)    | Demographic and socioeconomic data of the population (e.g., age, education level, income, occupation). |
 | CENSUS RESPONSIBLE  | 456  | Mixed (Numeric, Categorical)    | Information about the head of the household or family (e.g., age of head, education level of head). |
 | CENSUS SURROUNDINGS | 1062 | Mixed (Numeric, Categorical)    | Characteristics of the surroundings of households or the census tract (e.g., access to neighborhood services, infrastructure). |
-| TARGET              | 1    | Numeric (Float/Int)             | The target variable of your study, which is being modeled or analyzed.                |
-| **Total** | **4063** |                                 |                                                                                       |
+| **Total** | **4062** |                                 |                                                                                       |
 
 **Data Source:**
 * **2010 Demographic Census (Results - IBGE):** [https://censo2010.ibge.gov.br/resultados.html](https://censo2010.ibge.gov.br/resultados.html)
