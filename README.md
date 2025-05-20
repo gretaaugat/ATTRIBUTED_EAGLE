@@ -34,8 +34,3 @@ The dataset consists of **4063 features**, organized into the following categori
 
 
 * **`k_analysis_and_plots.py`**: This script is responsible for executing statistical tests and generating graphs related to the `K` parameter.
-
-To run the analysis:
-
-```bash
-python src/k_analysis_and_plots.py
