@@ -1,3 +1,4 @@
+
 # ATTRIBUTED_EAGLE
 
 ## Introduction
@@ -36,8 +37,7 @@ This project provides datasets and code for the implementation of ATTRIBUTED_EAG
 │   ├── attributed_eagle_log_co2_n2.json
 │   └── attributed_eagle_log_co2.ipynb
 └── pipeline/
-    ├── results_co2.zip
-    └── results_homicides.zip
+    └── [See Google Drive](https://drive.google.com/drive/folders/1UlZS2eW3CW2EFhv1T8RaQzXLm9_mkCT5?usp=drive_link)
 ```
 
 ---
@@ -54,11 +54,23 @@ The `datasets/` folder contains:
 
 ---
 
+## Pipeline
+
+The `pipeline/` folder contains the following result files:
+- **`results_co2.zip`**: Contains predictive model results for CO2 emissions.
+- **`results_homicides.zip`**: Contains predictive model results for homicide rates.
+
+Due to the large size of these files, they are hosted on Google Drive. You can access them at:
+
+**[Pipeline Folder on Google Drive](https://drive.google.com/drive/folders/1UlZS2eW3CW2EFhv1T8RaQzXLm9_mkCT5?usp=drive_link)**
+
+---
+
 ## Usage
 
 ### Key Notebooks:
-- **`k_value_and_statistical_test_co2.ipynb`**: Analyzes K-values and statistical tests for CO2 prediction using results from `pipeline/results_co2`.
-- **`k_value_and_statistical_test_homicides.ipynb`**: Similar analysis for homicide prediction using `pipeline/results_homicides`.
+- **`k_value_and_statistical_test_co2.ipynb`**: Analyzes K-values and statistical tests for CO2 prediction using results from the `pipeline/` folder.
+- **`k_value_and_statistical_test_homicides.ipynb`**: Similar analysis for homicide prediction using the `pipeline/` folder.
 - **`attributed_eagle_homicides.ipynb`**: Implements ATTRIBUTED_EAGLE for homicide prediction.
 - **`compute_RF_RFE_co2.ipynb`**: Evaluates RF and RFE for CO2 prediction.
 - **`compute_RF_RFE_homicides.ipynb`**: Evaluates RF and RFE for homicide prediction.
@@ -68,9 +80,9 @@ The `datasets/` folder contains:
 
 ## Results
 
-Results of the predictive models are stored in:
-- **`pipeline/results_co2/`**
-- **`pipeline/results_homicides/`**
+Results of the predictive models are stored in the `pipeline/` folder as **`results_co2.zip`** and **`results_homicides.zip`**. Please access these files via Google Drive:
+
+**[Pipeline Folder on Google Drive](https://drive.google.com/drive/folders/1UlZS2eW3CW2EFhv1T8RaQzXLm9_mkCT5?usp=drive_link)**
 
 ---
 
