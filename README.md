@@ -2,10 +2,13 @@
 
 ## Introduction
 
-This project aims to share the datasets and codes utilized in the implementation of ATTRIBUTED_EAGLE, an algorithm specifically designed for feature selection from attributed graph data. This implementation is applied to feature selection in two real-world scenarios: analyzing CO2 emissions and homicide rates in Brazil during 2010.
+This project provides datasets and code for the implementation of ATTRIBUTED_EAGLE, an algorithm designed for feature selection from attributed graph data. It has been applied to two real-world scenarios: analyzing CO2 emissions and homicide rates in Brazil during 2010.
+
+---
 
 ## Folder Structure
 
+```
 .
 ├── datasets/
 │   ├── br_data_census_2010.csv.zip
@@ -22,7 +25,7 @@ This project aims to share the datasets and codes utilized in the implementation
 │   ├── compute_RF_RFE_homicides.ipynb
 │   └── attributed_eagle_log_co2.ipynb
 ├── images/
-│   └── ... 
+│   └── ...
 ├── features_selected_homicides/
 │   ├── rf.json
 │   ├── rfe.json
@@ -35,36 +38,42 @@ This project aims to share the datasets and codes utilized in the implementation
 └── pipeline/
     ├── results_co2.zip
     └── results_homicides.zip
+```
 
+---
 
 ## Datasets
 
-The `datasets/` folder contains the following data files:
+The `datasets/` folder contains:
+- **`br_co2_log_2010.csv`**: Log-transformed CO2 emission data for Brazil in 2010.
+- **`br_data_census_2010.csv.zip`**: Brazilian census data from 2010.
+- **`br_data_census_2010_co2_log.csv.zip`**: Census data combined with log-transformed CO2 emission data.
+- **`br_data_census_2010_homicides.csv.zip`**: Census data combined with homicide rates for 2010.
+- **`br_homicides_2010.csv`**: Absolute Brazilian homicide rates for 2010.
+- **`filtered_adjacency_matrix_inv.csv.zip`**: Inverse adjacency matrix.
 
-* `br_co2_log_2010.csv`: Dataset with log-transformed CO2 emission data for Brazil in 2010.
-* `br_data_census_2010.csv.zip`: Dataset containing Brazilian census data from 2010.
-* `br_data_census_2010_co2_log.csv.zip`: Dataset combining Brazilian census data from 2010 with log-transformed CO2 emission data (target variable).
-* `br_data_census_2010_homicides.csv.zip`: Dataset combining Brazilian census data from 2010 with absolute Brazilian homicide rates from 2010 (target variable).
-* `br_homicides_2010.csv`: Dataset with absolute Brazilian homicide rates for 2010.
-* `filtered_adjacency_matrix_inv.csv`: Inverse adjacency matrix.
+---
 
 ## Usage
 
-Key Notebooks:
-* k_value_and_statistical_test_co2.ipynb: This notebook performs the analysis of K-value and statistical tests for CO2 prediction. It processes pre-computed results located in pipeline/results_co2 (derived from the EF-FS_Pipeline: https://github.com/tpinhoda/EF-FS_Pipeline) to generate K-curves and statistical test outcomes.
-* k_value_and_statistical_test_homicides.ipynb: This notebook performs the analysis of K-value and statistical tests for homicide prediction. It processes pre-computed results located in pipeline/results_homicides (derived from the EF-FS_Pipeline: https://github.com/tpinhoda/EF-FS_Pipeline) to generate K-curves and statistical test outcomes.
-* attributed_eagle_homicides.ipynb: This notebook implements and evaluates ATTRIBUTED_EAGLE for homicide prediction. Feature selection is performed using ATTRIBUTED_EAGLE, and the pre-processed folds in the pipeline directory already incorporate these features, eliminating the need to run the EF-FS_Pipeline:https://github.com/tpinhoda/EF-FS_Pipeline separately.
-* compute_RF_RFE_co2.ipynb: This notebook computes and evaluates Random Forest (RF) and Recursive Feature Elimination (RFE) for CO2 prediction. Feature selection with RF and RFE is performed, and the pre-processed folds in the pipeline directory already incorporate these features, eliminating the need to run the EF-FS_Pipeline: https://github.com/tpinhoda/EF-FS_Pipeline separately.
-* compute_RF_RFE_homicides.ipynb: This notebook computes and evaluates Random Forest (RF) and Recursive Feature Elimination (RFE) for homicide prediction. Feature selection with RF and RFE is performed, and the pre-processed folds in the pipeline directory already incorporate these features, eliminating the need to run the EF-FS_Pipeline: https://github.com/tpinhoda/EF-FS_Pipeline separately.
-* attributed_eagle_log_co2.ipynb: This notebook implements and evaluates ATTRIBUTED_EAGLE for log CO2 prediction. Feature selection with ATTRIBUTED_EAGLE is performed, and the pre-processed folds in the pipeline directory already incorporate these features, eliminating the need to run the EF-FS_Pipeline: https://github.com/tpinhoda/EF-FS_Pipeline separately.
+### Key Notebooks:
+- **`k_value_and_statistical_test_co2.ipynb`**: Analyzes K-values and statistical tests for CO2 prediction using results from `pipeline/results_co2`.
+- **`k_value_and_statistical_test_homicides.ipynb`**: Similar analysis for homicide prediction using `pipeline/results_homicides`.
+- **`attributed_eagle_homicides.ipynb`**: Implements ATTRIBUTED_EAGLE for homicide prediction.
+- **`compute_RF_RFE_co2.ipynb`**: Evaluates RF and RFE for CO2 prediction.
+- **`compute_RF_RFE_homicides.ipynb`**: Evaluates RF and RFE for homicide prediction.
+- **`attributed_eagle_log_co2.ipynb`**: Implements ATTRIBUTED_EAGLE for log-transformed CO2 prediction.
 
+---
 
 ## Results
 
-The `results_co2/` and `results_homicides/` folders within the `pipeline/` directory store the outcomes of the predictive models generated by the execution of https://github.com/tpinhoda/EF-FS_Pipeline
+Results of the predictive models are stored in:
+- **`pipeline/results_co2/`**
+- **`pipeline/results_homicides/`**
 
+---
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions for improvements or new features, please open an issue or submit a pull request.
-
+We welcome contributions! For suggestions or new features, please open an issue or submit a pull request.
