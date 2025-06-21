@@ -69,12 +69,12 @@ Due to the large size of these files, they are hosted on Google Drive. You can a
 ## Usage
 
 ### Key Notebooks:
-- **`k_value_and_statistical_test_co2.ipynb`**: Analyzes K-values and statistical tests for CO2 prediction using results from the `pipeline/` folder.
-- **`k_value_and_statistical_test_homicides.ipynb`**: Similar analysis for homicide prediction using the `pipeline/` folder.
-- **`attributed_eagle_homicides.ipynb`**: Implements ATTRIBUTED_EAGLE for homicide prediction.
-- **`compute_RF_RFE_co2.ipynb`**: Evaluates RF and RFE for CO2 prediction.
-- **`compute_RF_RFE_homicides.ipynb`**: Evaluates RF and RFE for homicide prediction.
+- **`k_value_and_statistical_test_co2.ipynb`**: Analyzes K-values and statistical tests for CO2 prediction using results from the `pipeline/results_co2` folder.
+- **`k_value_and_statistical_test_homicides.ipynb`**: Similar analysis for homicide prediction using results from the `pipeline/results_homicides` folder.
+- **`compute_RF_RFE_co2.ipynb`**: Performs feature selection using Random Forest (RF) and Recursive Feature Elimination (RFE) for CO2 use case. 
+- **`compute_RF_RFE_homicides.ipynb`**: Performs feature selection using Random Forest (RF) and Recursive Feature Elimination (RFE) for homicide use case.
 - **`attributed_eagle_log_co2.ipynb`**: Implements ATTRIBUTED_EAGLE for log-transformed CO2 prediction.
+- **`attributed_eagle_homicides.ipynb`**: Implements ATTRIBUTED_EAGLE for homicide prediction.
 
 ---
 
