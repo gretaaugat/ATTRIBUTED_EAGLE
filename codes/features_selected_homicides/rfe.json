@@ -1,0 +1,22 @@
+{
+    "selected_features": [
+        "CENSUS_Basico_V002",
+        "CENSUS_Basico_V003",
+        "CENSUS_PessoaRenda_V006",
+        "CENSUS_PessoaRenda_V015",
+        "CENSUS_PessoaRenda_V019",
+        "CENSUS_PessoaRenda_V021",
+        "CENSUS_PessoaRenda_V024",
+        "CENSUS_PessoaRenda_V034",
+        "CENSUS_PessoaRenda_V056",
+        "CENSUS_PessoaRenda_V078",
+        "CENSUS_ResponsavelRenda_V002",
+        "CENSUS_ResponsavelRenda_V012",
+        "CENSUS_ResponsavelRenda_V078",
+        "CENSUS_Entorno05_V916",
+        "CENSUS_Responsavel01_V024",
+        "CENSUS_Responsavel02_V189",
+        "CENSUS_Domicilio02_V076",
+        "IDHM_Renda"
+    ]
+}
